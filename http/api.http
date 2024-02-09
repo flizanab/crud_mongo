@@ -1,0 +1,30 @@
+
+
+###
+
+#creacion de nuevo usuario
+POST http://localhost:8080/api/v1/crear HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "Nuevo usuario REST23",
+    "age": 20,
+    "email": "e1@usuario.com",
+    "password": "123",
+    "rol": "tutor",
+    "description": "hola soy tanto tanto lorem ipsum",
+    "subjects": ["Matemáticas","Informatica","Otras"],
+    "calendar": ""
+
+}
+
+###
+
+# Login de usuario
+POST http://localhost:8080/api/v1/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "email@usuario",
+    "password": "1224134"
+}
